@@ -113,6 +113,15 @@ CSS STRUCTURE:
   --secondary-font: 'Montserrat', sans-serif;
 }
 
+/* Add to Cart button glow effect */
+.btn-cart {
+  transition: all 0.3s ease;
+}
+
+.btn-cart:hover {
+  box-shadow: 0 0 10px rgba(65, 64, 62, 0.5); /* Dark grey glow */
+  transform: translateY(-2px); /* Slight lift effect */
+}
 
 body {
   --bs-link-color: #333;
