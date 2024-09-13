@@ -145,6 +145,34 @@ CSS STRUCTURE:
   --primary-color: #6995B1;
   --light-primary-color: #eef1f3;
 }
+<!--Banner size-->
+<style>
+      .banner-container {
+        width: 100%;
+        max-width: 300px; /* Adjust this value as needed */
+        margin: 0 auto;
+      }
+      .banner {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        position: relative;
+        overflow: hidden;
+      }
+      .banner img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 768px) {
+        .banner-container {
+          max-width: 200px; /* Smaller size for mobile devices */
+        }
+      }
+    </style>
 
 /* Fonts */
 :root {
