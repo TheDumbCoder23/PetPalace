@@ -93,6 +93,7 @@ CSS STRUCTURE:
     --header-height-min: 80px;
   }
 }
+
 /* Product hover effect */
 .card {
   transition: all 0.3s ease-in-out;
@@ -132,7 +133,6 @@ CSS STRUCTURE:
   position: relative;
   z-index: 1;
 }
-
 
 /* Theme Colors */
 :root {
