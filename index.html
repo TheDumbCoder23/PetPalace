@@ -29,6 +29,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap"
   rel="stylesheet">
 
+<style>
+  .dropdown-submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+</style>
+
 </head>
 <body>
 
@@ -280,25 +288,55 @@
             <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
               <li class="nav-item">
                 <a href="index.html" class="nav-link active">Home</a>
-              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" id="foodDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Food
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="foodDropdown">
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="catFoodDropdown" data-bs-toggle="dropdown" aria-expanded="false">Cat Foods</a>
+                      <ul class="dropdown-menu dropdown-submenu" aria-labelledby="catFoodDropdown">
+                        <li><a class="dropdown-item" href="#">Dry Food</a></li>
+                        <li><a class="dropdown-item" href="#">Wet Food</a></li>
+                        <li><a class="dropdown-item" href="#">Treats</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="dogFoodDropdown" data-bs-toggle="dropdown" aria-expanded="false">Dog Foods</a>
+                      <ul class="dropdown-menu dropdown-submenu" aria-labelledby="dogFoodDropdown">
+                        <li><a class="dropdown-item" href="#">Dry Food</a></li>
+                        <li><a class="dropdown-item" href="#">Wet Food</a></li>
+                        <li><a class="dropdown-item" href="#">Treats</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="birdFoodDropdown" data-bs-toggle="dropdown" aria-expanded="false">Bird Foods</a>
+                      <ul class="dropdown-menu dropdown-submenu" aria-labelledby="birdFoodDropdown">
+                        <li><a class="dropdown-item" href="#">Seeds</a></li>
+                        <li><a class="dropdown-item" href="#">Pellets</a></li>
+                        <li><a class="dropdown-item" href="#">Treats</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="hamsterFoodDropdown" data-bs-toggle="dropdown" aria-expanded="false">Hamster Foods</a>
+                      <ul class="dropdown-menu dropdown-submenu" aria-labelledby="hamsterFoodDropdown">
+                        <li><a class="dropdown-item" href="#">Pellets</a></li>
+                        <li><a class="dropdown-item" href="#">Seed Mixes</a></li>
+                        <li><a class="dropdown-item" href="#">Treats</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Pet Toys</a></li>
+                  </ul>
+                </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                  aria-expanded="false">Food</a>
+                  aria-expanded="false">Grooming Products</a>
                 <ul class="dropdown-menu" aria-labelledby="pages">
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                  aria-expanded="false">Cat Foods</a>
-                <ul class="dropdown-menu" aria-labelledby="pages">
-                  <li><a href="index.html" class="dropdown-item">Whiskas</a></li>
-                  <li><a href="index.html" class="dropdown-item">Whiskas Milk</a></li>
-                  <li><a href="index.html" class="dropdown-item">Whiskas In Can</a></li>
-                </ul>
-              </li>
-                  <li><a href="index.html" class="dropdown-item">Dog Foods</a></li>
-                  <li><a href="index.html" class="dropdown-item">Bird Foods</a></li>
-                  <li><a href="index.html" class="dropdown-item">Hamster Foods</a></li>
-                  <li><a href="index.html" class="dropdown-item">Others</a></li>
-                </ul>
+                  <li><a href="index.html" class="dropdown-item">Shampoo</a></li>
+                  <li><a href="index.html" class="dropdown-item">Anti Flea's</a></li>
+                  <li><a href="index.html" class="dropdown-item">Tick Remover spray</a></li>
+                  <li><a href="index.html" class="dropdown-item">Grooming kit</a></li>
+            </ul>
               </li>
               <li class="nav-item">
                 <a href="index.html" class="nav-link">Clothes</a>
@@ -308,12 +346,12 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                  aria-expanded="false">Grooming Products</a>
+                  aria-expanded="false">Others</a>
                 <ul class="dropdown-menu" aria-labelledby="pages">
-                  <li><a href="index.html" class="dropdown-item">Shampoo</a></li>
-                  <li><a href="index.html" class="dropdown-item">Anti Flea's</a></li>
-                  <li><a href="index.html" class="dropdown-item">Tick Remover spray</a></li>
-                  <li><a href="index.html" class="dropdown-item">Grooming kit</a></li>
+                  <li><a href="index.html" class="dropdown-item">Ect.</a></li>
+                  <li><a href="index.html" class="dropdown-item">Ect.</a></li>
+                  <li><a href="index.html" class="dropdown-item">Ect.</a></li>
+                  <li><a href="index.html" class="dropdown-item">Ect.</a></li>
             </ul>
 
           </div>
