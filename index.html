@@ -44,7 +44,7 @@
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
         <path fill="currentColor"
-          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
         <path fill="currentColor"
@@ -71,7 +71,7 @@
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
         <path fill="currentColor"
-          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-7h16Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -191,16 +191,26 @@
           </div>
         </div>
 
-        <div
-          class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
-          <div class="banner-container">
-            <div class="banner">
-              <img src="images/banner2.jpg" alt="Special Offer" class="img-fluid">
-              <div class="banner-text">
+        <div class="col-sm-8 col-lg-4 d-flex justify-content-end align-items-center mt-4 mt-sm-0">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <a href="https://tenor.com/view/coco-martin-cocomelon-kids-cute-funny-gif-22310568" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+              <iconify-icon icon="healthicons:person" class="fs-4 me-2"></iconify-icon>
+              <span class="small">Person</span>
+            </a>
+            <a href="https://imgflip.com/gif/1zhlen" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+              <iconify-icon icon="mdi:heart" class="fs-4 me-2"></iconify-icon>
+              <span class="small">Heart</span>
+            </a>
+            <a href="#" class="d-flex align-items-center text-decoration-none text-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+              <div class="position-relative me-2">
+                <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary">
+                  03
+                </span>
               </div>
-            </div>
+              <span class="small">Your Cart</span>
+            </a>
           </div>
-
         </div>
       </div>
     </div>
@@ -258,12 +268,12 @@
           </div>
 
           <div class="offcanvas-body justify-content-between">
-            <select class="filter-categories border-0 mb-0 me-5">
-              <option>Shop by Category</option>
-              <option>Clothes</option>
-              <option>Food</option>
-              <option>Food</option>
-              <option>Toy</option>
+            <select id="filter-categories" class="filter-categories border-0 mb-0 me-5">
+              <option value="all">Filter By</option>
+              <option value="clothes">Clothes</option>
+              <option value="food">Food</option>
+              <option value="grooming">Grooming</option>
+              <option value="toy">Toy</option>
             </select>
 
 
@@ -273,63 +283,30 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                  aria-expanded="false">Pages</a>
+                  aria-expanded="false">Food</a>
                 <ul class="dropdown-menu" aria-labelledby="pages">
-                  <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                  <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                  <li><a href="index.html" class="dropdown-item">Single Product</a></li>
-                  <li><a href="index.html" class="dropdown-item">Cart</a></li>
-                  <li><a href="index.html" class="dropdown-item">Wishlist</a></li>
-                  <li><a href="index.html" class="dropdown-item">Checkout</a></li>
-                  <li><a href="index.html" class="dropdown-item">Blog</a></li>
-                  <li><a href="index.html" class="dropdown-item">Single Post</a></li>
-                  <li><a href="index.html" class="dropdown-item">Contact</a></li>
-                  <li><a href="index.html" class="dropdown-item">FAQs</a></li>
-                  <li><a href="index.html" class="dropdown-item">Account</a></li>
-                  <li><a href="index.html" class="dropdown-item">Thankyou</a></li>
-                  <li><a href="index.html" class="dropdown-item">Error 404</a></li>
-                  <li><a href="index.html" class="dropdown-item">Styles</a></li>
+                  <li><a href="index.html" class="dropdown-item">Cat Foods</a></li>
+                  <li><a href="index.html" class="dropdown-item">Dog Foods</a></li>
+                  <li><a href="index.html" class="dropdown-item">Bird Foods</a></li>
+                  <li><a href="index.html" class="dropdown-item">Hamster Foods</a></li>
+                  <li><a href="index.html" class="dropdown-item">Pet Toys</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Shop</a>
+                <a href="index.html" class="nav-link">Clothes</a>
               </li>
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Blog</a>
+                <a href="index.html" class="nav-link">Toys</a>
               </li>
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Others</a>
-              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
+                  aria-expanded="false">Grooming Products</a>
+                <ul class="dropdown-menu" aria-labelledby="pages">
+                  <li><a href="index.html" class="dropdown-item">Shampoo</a></li>
+                  <li><a href="index.html" class="dropdown-item">Anti Flea's</a></li>
+                  <li><a href="index.html" class="dropdown-item">Tick Remover spray</a></li>
+                  <li><a href="index.html" class="dropdown-item">Grooming kit</a></li>
             </ul>
-
-            <div class="d-none d-lg-flex align-items-end">
-              <ul class="d-flex justify-content-end list-unstyled m-0">
-                <li>
-                  <a href="index.html" class="mx-3">
-                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
-                  </a>
-                </li>
-                <li>
-                  <a href="index.html" class="mx-3">
-                    <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
-                  </a>
-                </li>
-
-                <li class="">
-                  <a href="index.html" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                    aria-controls="offcanvasCart">
-                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
-                      03
-                    </span>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
 
           </div>
 
@@ -342,7 +319,7 @@
     </div>
   </header>
 
-  <section id="banner" style="background: https://prnt.sc/S7tGQsl_hF5rF9F3EC;">
+  <section id="banner" style="background-image: url('https://prnt.sc/S7tGQsl_hF5rF9F3EC');" class="banner-section">
     <div class="container">
       <div class="swiper main-swiper">
         <div class="swiper-wrapper">
@@ -452,14 +429,15 @@
   <section id="clothing" class="my-5 overflow-hidden">
     <div class="container pb-5">
 
-      <div class="section-header d-md-flex justify-content-between align-items-center mb-3">
+      <div class="section-header d-flex justify-content-between align-items-center mb-3">
         <h1 class="display-3 fw-normal">Recommended for you</h1>
         <div>
-          <a href="https://prnt.sc/S7tGQsl_hF5r" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">
-            shop now
+          <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">
+            More Products
             <svg width="24" height="24" viewBox="0 0 24 24" class="mb-1">
-              <use xlink:href="https://prnt.sc/S7tGQsl_hF5rarrow-right"></use>
-            </svg></a>
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </a>
         </div>
       </div>
 
@@ -1031,11 +1009,11 @@
     </div>
   </section>
 
-  <section id="banner-2" class="my-3" style="background: https://prnt.sc/S7tGQsl_hF5rF9F3EC;">
+  <section id="banner-2" class="my-3" style="background-image: url('https://prnt.sc/S7tGQsl_hF5rF9F3EC');">
     <div class="container">
       <div class="row flex-row-reverse banner-content align-items-center">
         <div class="img-wrapper col-12 col-md-6">
-          <img src="images/banner-img2.png" class="img-fluid">
+          <img src="images/banner-img2.png" class="img-fluid" alt="Banner image">
         </div>
         <div class="content-wrapper col-12 offset-md-1 col-md-5 p-5">
           <div class="secondary-font text-primary text-uppercase mb-3 fs-4">Upto 40% off</div>
@@ -1518,11 +1496,7 @@
     <div class="container">
       <h2 class="section-title mb-5">Our Group Members</h2>
     </div>
-  </section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <img src="images/banner2.jpg" alt="Group Members Banner" class="img-fluid rounded shadow-sm">
+  
       </div>
     </div>
   </div>
@@ -1721,4 +1695,12 @@
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
+</html>
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
 </html>
